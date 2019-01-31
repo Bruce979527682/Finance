@@ -21,3 +21,10 @@ C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Razor\Views\_V
 C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.RazorTargetAssemblyInfo.cache
 C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.RazorTargetAssemblyInfo.cs
+C:\Users\EDZ\source\repos\Finance\Finance\bin\Debug\netcoreapp2.2\Finance.pdb
+C:\Users\EDZ\source\repos\Finance\Finance\bin\Debug\netcoreapp2.2\Finance.Views.dll
+C:\Users\EDZ\source\repos\Finance\Finance\bin\Debug\netcoreapp2.2\Finance.Views.pdb
+C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.Views.pdb
+C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.dll
+C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.pdb
+C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.csproj.CopyComplete

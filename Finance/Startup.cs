@@ -32,8 +32,8 @@ namespace Finance
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            var sqlConnection = Configuration.GetConnectionString("SqlServerConnection");
-            services.AddDbContext<FinanceContext>(option => option.UseSqlServer(sqlConnection));
+            //var sqlConnection = Configuration.GetConnectionString("SqlServerConnection");
+            //services.AddDbContext<FinanceContext>(option => option.UseSqlServer(sqlConnection));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
