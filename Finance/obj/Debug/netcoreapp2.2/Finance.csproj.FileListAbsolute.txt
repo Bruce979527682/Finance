@@ -28,3 +28,5 @@ C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.Views.
 C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.dll
 C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.pdb
 C:\Users\EDZ\source\repos\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.csproj.CopyComplete
+C:\Users\EDZ\source\repos\Finance\Finance\bin\Debug\netcoreapp2.2\Finance.Entity.dll
+C:\Users\EDZ\source\repos\Finance\Finance\bin\Debug\netcoreapp2.2\Finance.Entity.pdb

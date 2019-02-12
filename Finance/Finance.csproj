@@ -17,4 +17,9 @@
     </PackageReference>
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\Finance.Entity\Finance.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

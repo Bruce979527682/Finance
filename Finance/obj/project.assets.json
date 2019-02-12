@@ -4438,6 +4438,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Finance.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Finance.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Finance.Entity.dll": {}
+        }
       }
     }
   },
@@ -12048,10 +12058,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Finance.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Finance.Entity/Finance.Entity.csproj",
+      "msbuildProject": "../Finance.Entity/Finance.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Finance.Entity >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 2.2.1",
@@ -12089,7 +12105,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\EDZ\\source\\repos\\Finance\\Finance.Entity\\Finance.Entity.csproj": {
+              "projectPath": "C:\\Users\\EDZ\\source\\repos\\Finance\\Finance.Entity\\Finance.Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

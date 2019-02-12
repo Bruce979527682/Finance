@@ -56,6 +56,7 @@ namespace Finance
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+            //路由设置
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
