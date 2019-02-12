@@ -1,0 +1,9 @@
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\bin\Debug\netcoreapp2.1\Finance.Utils.deps.json
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\bin\Debug\netcoreapp2.1\Finance.Utils.dll
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\bin\Debug\netcoreapp2.1\Finance.Utils.pdb
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.csprojAssemblyReference.cache
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.csproj.CoreCompileInputs.cache
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.AssemblyInfoInputs.cache
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.AssemblyInfo.cs
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.dll
+C:\Users\EDZ\source\repos\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.pdb
