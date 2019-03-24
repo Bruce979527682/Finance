@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance", "Finance\Finance.csproj", "{9D584FD3-F5B3-41B5-AAD2-A695C7CF9524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance", "Finance\Finance.csproj", "{9D584FD3-F5B3-41B5-AAD2-A695C7CF9524}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Entity", "Finance.Entity\Finance.Entity.csproj", "{F79C66F8-A5EA-47C4-975D-7C54F53351AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Entity", "Finance.Entity\Finance.Entity.csproj", "{F79C66F8-A5EA-47C4-975D-7C54F53351AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Utils", "Finance.Utils\Finance.Utils.csproj", "{4A22C3EB-8D49-42C1-AC6C-FF634BD87BC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Utils", "Finance.Utils\Finance.Utils.csproj", "{4A22C3EB-8D49-42C1-AC6C-FF634BD87BC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Business", "Finance.Business\Finance.Business.csproj", "{2C2ADE59-E996-40CB-92FF-F6E6D8C23753}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Bll", "Finance.Business\Finance.Bll.csproj", "{2C2ADE59-E996-40CB-92FF-F6E6D8C23753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Data", "Finance.Data\Finance.Data.csproj", "{0377E042-3D87-4B46-B7CB-3F7FA0177245}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Dat", "Finance.Data\Finance.Dat.csproj", "{0377E042-3D87-4B46-B7CB-3F7FA0177245}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

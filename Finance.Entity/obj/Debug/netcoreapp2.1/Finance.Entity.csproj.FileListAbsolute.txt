@@ -6,3 +6,12 @@ C:\Users\EDZ\source\repos\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance
 C:\Users\EDZ\source\repos\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.AssemblyInfo.cs
 C:\Users\EDZ\source\repos\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.dll
 C:\Users\EDZ\source\repos\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.pdb
+C:\Users\EDZ\Documents\Finance\Finance.Entity\bin\Debug\netcoreapp2.1\Finance.Entity.deps.json
+C:\Users\EDZ\Documents\Finance\Finance.Entity\bin\Debug\netcoreapp2.1\Finance.Entity.dll
+C:\Users\EDZ\Documents\Finance\Finance.Entity\bin\Debug\netcoreapp2.1\Finance.Entity.pdb
+C:\Users\EDZ\Documents\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.csprojAssemblyReference.cache
+C:\Users\EDZ\Documents\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.csproj.CoreCompileInputs.cache
+C:\Users\EDZ\Documents\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.AssemblyInfoInputs.cache
+C:\Users\EDZ\Documents\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.AssemblyInfo.cs
+C:\Users\EDZ\Documents\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.dll
+C:\Users\EDZ\Documents\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.pdb
