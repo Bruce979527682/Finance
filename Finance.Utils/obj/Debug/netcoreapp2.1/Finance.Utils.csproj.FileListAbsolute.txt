@@ -16,3 +16,12 @@ C:\Users\EDZ\Documents\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Uti
 C:\Users\EDZ\Documents\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.AssemblyInfo.cs
 C:\Users\EDZ\Documents\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.dll
 C:\Users\EDZ\Documents\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.pdb
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\bin\Debug\netcoreapp2.1\Finance.Utils.deps.json
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\bin\Debug\netcoreapp2.1\Finance.Utils.dll
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\bin\Debug\netcoreapp2.1\Finance.Utils.pdb
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.csprojAssemblyReference.cache
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.AssemblyInfoInputs.cache
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.AssemblyInfo.cs
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.dll
+C:\Users\Bruce\Desktop\Finance\Finance.Utils\obj\Debug\netcoreapp2.1\Finance.Utils.pdb

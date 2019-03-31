@@ -1,8 +1,0 @@
-C:\Users\EDZ\Documents\Finance\Finance.Data\bin\Debug\netcoreapp2.1\Finance.Dat.deps.json
-C:\Users\EDZ\Documents\Finance\Finance.Data\bin\Debug\netcoreapp2.1\Finance.Dat.dll
-C:\Users\EDZ\Documents\Finance\Finance.Data\bin\Debug\netcoreapp2.1\Finance.Dat.pdb
-C:\Users\EDZ\Documents\Finance\Finance.Data\obj\Debug\netcoreapp2.1\Finance.Dat.csproj.CoreCompileInputs.cache
-C:\Users\EDZ\Documents\Finance\Finance.Data\obj\Debug\netcoreapp2.1\Finance.Dat.AssemblyInfoInputs.cache
-C:\Users\EDZ\Documents\Finance\Finance.Data\obj\Debug\netcoreapp2.1\Finance.Dat.AssemblyInfo.cs
-C:\Users\EDZ\Documents\Finance\Finance.Data\obj\Debug\netcoreapp2.1\Finance.Dat.dll
-C:\Users\EDZ\Documents\Finance\Finance.Data\obj\Debug\netcoreapp2.1\Finance.Dat.pdb
