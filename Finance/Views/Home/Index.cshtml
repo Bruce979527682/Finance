@@ -1,11 +1,294 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome @ViewData["Title"]</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .el-row {
+        margin-bottom: 20px;
+    }
+    /*.el-row:last-child {
+        margin-bottom: 0;
+    }*/
+</style>
+<div id="div-vue" style="display:none;" v-show="isCreated">
+    <div>
+        <el-row>
+            <el-col :span="4">
+                <el-timeline>
+                    <el-timeline-item v-for="(line, index) in timeline"
+                                      :key="index"
+                                      :icon="line.icon"
+                                      :type="line.type"
+                                      :color="line.color"
+                                      :size="line.size"
+                                      :timestamp="line.timestamp">
+                        {{line.content}}
+                    </el-timeline-item>
+                </el-timeline>
+            </el-col>
+            <el-col :span="16">
+                <el-table :data="list" style="width: 100%" height="250">
+                    <el-table-column fixed
+                                     prop="date"
+                                     label="日期"
+                                     width="150">
+                    </el-table-column>
+                    <el-table-column prop="name"
+                                     label="姓名"
+                                     width="120">
+                    </el-table-column>
+                    <el-table-column prop="province"
+                                     label="省份"
+                                     width="120">
+                    </el-table-column>
+                    <el-table-column prop="city"
+                                     label="市区"
+                                     width="120">
+                    </el-table-column>
+                    <el-table-column prop="address"
+                                     label="地址"
+                                     width="300">
+                    </el-table-column>
+                    <el-table-column prop="zip"
+                                     label="邮编"
+                                     width="120">
+                    </el-table-column>
+                </el-table>
+            </el-col>
+            <el-col :span="4">
+                <el-row>
+                    <el-button @@click="dialogVisible = true">新增类别</el-button>
+                </el-row>
+                <el-row>
+                    <el-col :span="4">类别</el-col>
+                    <el-col :span="20">
+                        <el-select v-model="record.category" placeholder="请选择">
+                            <el-option v-for="category in categoryList"
+                                       :key="category.id"
+                                       :label="category.name"
+                                       :value="category.id">
+                            </el-option>
+                        </el-select>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="4">名称</el-col>
+                    <el-col :span="20">
+                        <el-input v-model="record.name" placeholder="请输入内容"></el-input>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="4">金额</el-col>
+                    <el-col :span="20">
+                        <el-input v-model="record.money" placeholder="请输入内容"></el-input>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="4">数量</el-col>
+                    <el-col :span="20">
+                        <el-input v-model="record.number" placeholder="请输入内容"></el-input>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="4">日期</el-col>
+                    <el-col :span="20">
+                        <el-input v-model="record.addTime" placeholder="请输入内容"></el-input>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="4">备注</el-col>
+                    <el-col :span="20">
+                        <el-input v-model="record.remark" placeholder="请输入内容"></el-input>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="4">类型</el-col>
+                    <el-col :span="20">
+                        <el-select v-model="record.type" placeholder="请选择">
+                            <el-option v-for="nature in natureList"
+                                       :key="nature.value"
+                                       :label="nature.label"
+                                       :value="nature.value">
+                            </el-option>
+                        </el-select>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-button @@click="addRecord()">保存</el-button>
+                </el-row>
+            </el-col>
+        </el-row>
+    </div>
+    <el-dialog title="新增类别" :visible.sync="dialogVisible" width="500px" :before-close="handleClose">
+        <div>
+            <el-row>
+                <el-input type="text" placeholder="名称" v-model="dataType.name">
+            </el-row>
+            <el-row>
+                <el-input type="text" placeholder="备注" v-model="dataType.remark">
+            </el-row>
+        </div>
+        <span slot="footer" class="dialog-footer">
+            <el-button @@click="dialogVisible = false">取 消</el-button>
+            <el-button type="primary" @@click="addType()">确 定</el-button>
+        </span>
+    </el-dialog>
 </div>
 <script>
+    var vm = new Vue({
+        el: '#div-vue',
+        data: {
+            isCreated: false,
+            timeline: [
+                {
+                    content: '记录',
+                    timestamp: '2019-01-01 08:08'
+                }
+            ],
+            list: [
+                //{
+                //    date: '2016-05-03',
+                //    name: '王小虎',
+                //    province: '上海',
+                //    city: '普陀区',
+                //    address: '上海市普陀区金沙江路 1518 弄',
+                //    zip: 200333
+                //}
+            ],
+            dataType: {
+                name: '',
+                remark: ''
+            },
+            record: {
+                category: '',
+                type: '',
+                name: '',
+                money: '',
+                number: '',
+                addTime: '',
+                remark: '',
+            },
+            categoryList: [],
+            recordList: [],
+            natureList: [
+                {
+                    value: 1,
+                    label: '资产'
+                },
+                {
+                    value: 2,
+                    label: '负债'
+                }
+            ],
+            queryPara: {
+                pageIndex: 1,
+                pageSize: 20,
+            },
+            queryPara2: {
+                pageIndex: 1,
+                pageSize: 20,
+            },
+            dialogVisible: false
+        },
+        methods: {
+            loadData() {
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/gettypelist',
+                    dataType: 'json',
+                    data: this.queryPara,
+                    success: function (data) {
+                        if (data.code == 1) {
+                            vm.categoryList = data.list;
+                        }
+                    },
+                    error: function (data) {
 
+                    }
+                });
+            },
+            loadData2() {
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/getrecordlist',
+                    dataType: 'json',
+                    data: this.queryPara2,
+                    success: function (data) {
+                        if (data.code == 1) {
+                            vm.recordList = data.list;
+                        }
+                    },
+                    error: function (data) {
+
+                    }
+                });
+            },
+            addType: function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/addrecordtype',
+                    data: this.dataType,
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.code == 1) {
+                            vm.loadData2();
+                            vm.$message(data.msg);
+                        } else {
+
+                            vm.$message(data.msg);
+                        }
+                        vm.dialogVisible = false;
+                    },
+                    error: function (data) {
+
+                    }
+                });
+            },
+            addRecord: function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/addrecord',
+                    data: this.record,
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.code == 1) {
+                            vm.loadData();
+                            vm.$message(data.msg);
+                        } else {
+
+                            vm.$message(data.msg);
+                        }
+                    },
+                    error: function (data) {
+
+                    }
+                });
+            },
+            convertTime: function (time) {
+                if (time != undefined && time !== '') {
+                    return time.substr(0, 10);
+                }
+            },
+            handleClose(done) {
+                this.$confirm('确认关闭？').then(_ => {
+                        done();
+                }).catch(_ => {
+
+                });
+            }
+        },
+        computed: {
+
+        },
+        created: function () {
+            this.isCreated = true;
+            this.loadData();
+            this.loadData2();
+        },
+        beforeMount: function () {
+
+        },
+        mounted: function () {
+
+        }
+    });
 </script>

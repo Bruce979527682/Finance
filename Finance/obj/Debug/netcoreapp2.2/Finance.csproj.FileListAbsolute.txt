@@ -94,3 +94,6 @@ C:\Users\Bruce\Desktop\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.Views.pdb
 C:\Users\Bruce\Desktop\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.csproj.CopyComplete
 C:\Users\Bruce\Desktop\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.dll
 C:\Users\Bruce\Desktop\Finance\Finance\obj\Debug\netcoreapp2.2\Finance.pdb
+C:\Users\Bruce\Desktop\Finance\Finance\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
+C:\Users\Bruce\Desktop\Finance\Finance\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutLogin.g.cshtml.cs
+C:\Users\Bruce\Desktop\Finance\Finance\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs

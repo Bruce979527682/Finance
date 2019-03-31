@@ -14,6 +14,8 @@ namespace Finance.Models
         {
         }
 
-        public DbSet<LearnClass> LearnClass { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Record> Records { get; set; }
+        public DbSet<RecordType> RecordTypes { get; set; }
     }
 }

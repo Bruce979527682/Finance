@@ -18,7 +18,6 @@ C:\Users\EDZ\Documents\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.En
 C:\Users\Bruce\Desktop\Finance\Finance.Entity\bin\Debug\netcoreapp2.1\Finance.Entity.deps.json
 C:\Users\Bruce\Desktop\Finance\Finance.Entity\bin\Debug\netcoreapp2.1\Finance.Entity.dll
 C:\Users\Bruce\Desktop\Finance\Finance.Entity\bin\Debug\netcoreapp2.1\Finance.Entity.pdb
-C:\Users\Bruce\Desktop\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.csprojAssemblyReference.cache
 C:\Users\Bruce\Desktop\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.csproj.CoreCompileInputs.cache
 C:\Users\Bruce\Desktop\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.AssemblyInfoInputs.cache
 C:\Users\Bruce\Desktop\Finance\Finance.Entity\obj\Debug\netcoreapp2.1\Finance.Entity.AssemblyInfo.cs

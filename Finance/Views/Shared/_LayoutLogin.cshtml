@@ -37,27 +37,7 @@
         }
     </style>
     <div>
-        <div id="layout_main" class="layout-left">
-            <el-aside width="203px" style="background-color: rgb(238, 241, 246)">
-                <el-menu default-active="1-4-1" class="el-menu-vertical-demo" :collapse="false">                    
-                    <el-menu-item index="1">
-                        <i class="el-icon-menu"></i>
-                        <span slot="title">数据录入</span>
-                    </el-menu-item>
-                    <el-menu-item index="2">
-                        <i class="el-icon-document"></i>
-                        <span slot="title">资产统计</span>
-                    </el-menu-item>
-                    <el-menu-item index="3">
-                        <i class="el-icon-setting"></i>
-                        <span slot="title">新闻</span>
-                    </el-menu-item>
-                </el-menu>
-            </el-aside>
-        </div>
-        <div class="layout-right">
-            @RenderBody()
-        </div>
+        @RenderBody()
     </div>
     <environment include="Development">
        
@@ -67,17 +47,6 @@
     </environment>
     
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
-        var vm = new Vue({
-            el: '#layout_main',
-            data: {
-                isCollapse: true
-            },
-            computed: {
-
-            }
-        })
-    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

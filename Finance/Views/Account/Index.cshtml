@@ -1,0 +1,114 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<style>
+    .div-box {
+        width: 400px;
+        height: 350px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: calc(50% - 200px);
+        left: calc(50% - 175px);
+    }
+    .div-head {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 15px;
+        height: 30px !important;
+    }
+    .div-footer {
+        text-align: center;        
+    }
+    .btn-center {
+        margin:0 auto;
+        width:72px;
+    }
+    .el-row {
+        margin-bottom: 20px;
+    }
+        /*.el-row:last-child {
+            margin-bottom: 0;
+        }*/
+</style>
+<div id="div-vue">
+    <div class="div-box">
+        <el-container>
+            <el-header class="div-head">账号登录</el-header>
+            <el-main>
+                <el-row :gutter="10">
+                    <el-col :span="24">
+                        <el-input v-model="account.username" placeholder="请输入账号"></el-input>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="10">
+                    <el-col :span="24">
+                        <el-input v-model="account.password"  placeholder="请输入密码" show-password></el-input>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="10">
+                    <div class="btn-center">
+                        <el-button @@click="postData()">登陆</el-button>
+                    </div>
+                </el-row>
+            </el-main>
+            <el-footer class="div-footer">
+                没有账号？ <a asp-controller="account" asp-action="register">注册</a>
+            </el-footer>
+        </el-container>
+    </div>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#div-vue',
+        data: {
+            isCreated: false,            
+            queryPara: {
+                pageIndex: 1,
+                pageSize: 20,
+            },
+            account: {
+                username: '',
+                password:''
+            }
+        },
+        methods: {
+            loadData() {
+                
+            },
+            postData() {
+                $.ajax({
+                    url: '/account/login',
+                    dataType: 'json',
+                    type: "POST",
+                    data: this.account,
+                    success: function (data) {
+                        if (data.code === 1) {
+                            location.href = data.src;
+                        }
+                        else {
+                            vm.$message(data.msg);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                    }
+                });
+            }
+        },
+        computed: {
+
+        },
+        created: function () {
+            this.isCreated = true;
+            this.loadData();
+        },
+        beforeMount: function () {
+
+        },
+        mounted: function () {
+
+        }
+    });
+</script>
+

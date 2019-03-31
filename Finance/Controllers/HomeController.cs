@@ -7,10 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Finance.Models;
 using System.Text.Encodings.Web;
 using Microsoft.EntityFrameworkCore;
+using Finance.Entity;
 
 namespace Finance.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private readonly FinanceContext _context;
 
@@ -55,7 +56,7 @@ namespace Finance.Controllers
             }
 
             //var learn = await _context.LearnClass.FindAsync(id);//异步
-            var learn = await _context.LearnClass.FirstOrDefaultAsync(m => m.Id == id);            
+            var learn = await _context.Records.FirstOrDefaultAsync(m => m.Id == id);            
             if (learn == null)
             {
                 return NotFound();
@@ -71,7 +72,7 @@ namespace Finance.Controllers
         /// <returns></returns>
         public async Task<IActionResult> GetList()
         {
-            return View(await _context.LearnClass.ToListAsync());
+            return View(await _context.Records.ToListAsync());
         }
 
         /// <summary>
@@ -82,7 +83,7 @@ namespace Finance.Controllers
         [ValidateAntiForgeryToken]//验证表单标记帮助程序中的防伪标记生成器生成的隐藏的 XSRF 标记
         public async Task<IActionResult> SearchData(string searchString)
         {
-            var learns = from m in _context.LearnClass
+            var learns = from m in _context.Records
                          select m;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -98,10 +99,11 @@ namespace Finance.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var learn = await _context.LearnClass.FindAsync(id);
-            _context.LearnClass.Remove(learn);
+            var record = await _context.Records.FindAsync(id);
+            _context.Records.Remove(record);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+                
     }
 }
